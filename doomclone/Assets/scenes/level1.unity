@@ -408,7 +408,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 104880, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 104880, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: m_Name
@@ -575,6 +575,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 466291630}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &500978263 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 104880, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
+  m_PrefabInternal: {fileID: 1546442446}
+--- !u!114 &500978264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 500978263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80f9c3eaacbe804fa392f141186ac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMelee: 1
+  isHitScan: 0
+  hasShotgun: 0
+  isProjectile: 0
+  lowDamage: 1
+  highDamage: 5
+  lowFireRate: 1
+  highFireRate: 3
+  shotRange: 200
+  meleeRange: 1
+  shotgunPellets: 8
+  shotgunSpread: 3
+  rocketPrefab: {fileID: 0}
+  launcher3Offset: 2
 --- !u!1 &524052295
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +689,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 104880, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11465832, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: speed
@@ -744,6 +773,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 94
   m_CollisionDetection: 0
+--- !u!114 &572539579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572539575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80f9c3eaacbe804fa392f141186ac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMelee: 0
+  isHitScan: 1
+  hasShotgun: 1
+  isProjectile: 0
+  lowDamage: 1
+  highDamage: 5
+  lowFireRate: 5
+  highFireRate: 10
+  shotRange: 200
+  meleeRange: 1
+  shotgunPellets: 8
+  shotgunSpread: .5
+  rocketPrefab: {fileID: 0}
+  launcher3Offset: 2
 --- !u!1 &590040105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,7 +1732,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 104880, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11465832, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: speed
@@ -1695,6 +1749,10 @@ Prefab:
     - target: {fileID: 455012, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: m_LocalScale.z
       value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465832, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
+      propertyPath: moveOffset
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21221522, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
@@ -1761,7 +1819,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 104880, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11465832, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: speed
@@ -2250,6 +2308,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 94
   m_CollisionDetection: 0
+--- !u!114 &1121820422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1121820418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80f9c3eaacbe804fa392f141186ac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMelee: 0
+  isHitScan: 0
+  hasShotgun: 0
+  isProjectile: 1
+  lowDamage: 1
+  highDamage: 5
+  lowFireRate: 1
+  highFireRate: 1.10000002
+  shotRange: 200
+  meleeRange: 1
+  shotgunPellets: 8
+  shotgunSpread: .600000024
+  rocketPrefab: {fileID: 116992, guid: 8d681d7d03a381c4fbbd2684217cb083, type: 2}
+  launcher3Offset: 2
 --- !u!1 &1124352517
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,7 +3367,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 104880, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 455012, guid: b6fab0672c79d8247a35c2ca3459991d, type: 2}
       propertyPath: m_LocalScale.x
@@ -3710,6 +3793,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 94
   m_CollisionDetection: 0
+--- !u!114 &1694314590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694314588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b80f9c3eaacbe804fa392f141186ac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMelee: 0
+  isHitScan: 1
+  hasShotgun: 0
+  isProjectile: 0
+  lowDamage: 1
+  highDamage: 5
+  lowFireRate: 1
+  highFireRate: 3
+  shotRange: 200
+  meleeRange: 1
+  shotgunPellets: 8
+  shotgunSpread: 3
+  rocketPrefab: {fileID: 0}
+  launcher3Offset: 2
 --- !u!23 &1694314594
 MeshRenderer:
   m_ObjectHideFlags: 0

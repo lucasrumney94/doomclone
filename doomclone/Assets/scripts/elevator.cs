@@ -96,7 +96,7 @@ public class elevator : MonoBehaviour {
 				//Debug.Log("down hit");
 				//changeState = true;
 				onHit.collider.SendMessageUpwards("changeMyState",SendMessageOptions.DontRequireReceiver);
-				Debug.DrawLine(transform.position,onHit.point, Color.red);
+				//Debug.DrawLine(transform.position,onHit.point, Color.red);
 			}
 			if (Physics.Raycast(player.position,transform.TransformDirection(player.forward),out onHit,activate_distance))
 			{
