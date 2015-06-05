@@ -16,10 +16,7 @@ public class playerHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown("space"))
-		{
-			applyDamage(10f);
-		}
+
 	}
 
 	void applyDamage(float damage)
