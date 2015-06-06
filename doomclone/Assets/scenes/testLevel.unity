@@ -1329,10 +1329,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be7e633826ee7ce41ba4f284f67558f9, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &259482641 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  m_PrefabInternal: {fileID: 1085340350}
 --- !u!1001 &261595936
 Prefab:
   m_ObjectHideFlags: 0
@@ -4837,7 +4833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b1371ee8ac9834ca52e054a0849a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interact_distance: 2
+  interact_distance: 10
 --- !u!4 &869854404 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -5955,6 +5951,10 @@ Prefab:
       propertyPath: m_Height
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Depth
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
@@ -6567,8 +6567,9 @@ GameObject:
   - 33: {fileID: 1236210170}
   - 64: {fileID: 1236210169}
   - 23: {fileID: 1236210168}
+  - 114: {fileID: 1236210171}
   m_Layer: 8
-  m_Name: Quad
+  m_Name: pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6581,11 +6582,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1236210166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.560000002, z: .879999995}
+  m_LocalPosition: {x: 0, y: .24000001, z: .880000114}
   m_LocalScale: {x: .389999986, y: .680000007, z: 1}
   m_Children: []
-  m_Father: {fileID: 259482641}
-  m_RootOrder: 0
+  m_Father: {fileID: 869854404}
+  m_RootOrder: 2
 --- !u!23 &1236210168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6629,6 +6630,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1236210166}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1236210171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1236210166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd02e1781604e04081b2e39dcda9ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1236426249
 Prefab:
   m_ObjectHideFlags: 0

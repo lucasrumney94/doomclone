@@ -20,13 +20,14 @@ public class playerInteract : MonoBehaviour {
 		{
 			interactPressed();
 		}
+		Debug.DrawRay(transform.position,transform.TransformDirection(Vector3.forward), Color.cyan);
 	}
 	void interactPressed()
 	{
 		if (Physics.Raycast(transform.position,transform.TransformDirection(Vector3.forward),out interHit,interact_distance))
 		{
 			interHit.collider.SendMessageUpwards("interact",SendMessageOptions.DontRequireReceiver);
-			//Debug.DrawLine(transform.position,interHit.point, Color.cyan);
+
 		}
 	}
 
