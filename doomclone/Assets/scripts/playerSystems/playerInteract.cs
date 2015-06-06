@@ -9,6 +9,9 @@ using System.Collections;
 public class playerInteract : MonoBehaviour {
 
 	public float interact_distance = 200.0f;
+	public float forward_offset = 1.5f; 
+
+
 
 	private RaycastHit interHit; // the players raycast for interaction
 
@@ -20,11 +23,11 @@ public class playerInteract : MonoBehaviour {
 		{
 			interactPressed();
 		}
-		Debug.DrawRay(transform.position,transform.TransformDirection(Vector3.forward), Color.cyan);
+		Debug.DrawRay(transform.position+transform.TransformVector(Vector3.forward*forward_offset),transform.TransformDirection(Vector3.forward), Color.blue);
 	}
 	void interactPressed()
 	{
-		if (Physics.Raycast(transform.position,transform.TransformDirection(Vector3.forward),out interHit,interact_distance))
+		if (Physics.Raycast(transform.position+transform.TransformVector(Vector3.forward*forward_offset),transform.TransformDirection(Vector3.forward),out interHit,interact_distance))
 		{
 			interHit.collider.SendMessageUpwards("interact",SendMessageOptions.DontRequireReceiver);
 
