@@ -9,9 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 413138}
   - 33: {fileID: 3341768}
-  - 64: {fileID: 6474594}
   - 23: {fileID: 2301232}
   - 114: {fileID: 11408110}
+  - 114: {fileID: 11489296}
+  - 65: {fileID: 6529874}
   m_Layer: 0
   m_Name: shotgunL
   m_TagString: Untagged
@@ -62,8 +63,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167208}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6474594
-MeshCollider:
+--- !u!65 &6529874
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -72,8 +73,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: .999999821, y: 1, z: .5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11408110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,6 +86,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72dc5a753df3c314f89ec3071acbb161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11489296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5a5478a8779e44e89cafd567dbc316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: shotgun
+  amount: 10
+  isGun: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

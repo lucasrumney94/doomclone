@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 493358}
   - 33: {fileID: 3385924}
-  - 64: {fileID: 6418624}
   - 23: {fileID: 2392866}
   - 114: {fileID: 11447676}
+  - 65: {fileID: 6512200}
   m_Layer: 0
   m_Name: armorL
   m_TagString: Untagged
@@ -62,8 +62,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100394}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6418624
-MeshCollider:
+--- !u!65 &6512200
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -72,8 +72,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: .999999762, y: 1, z: .5}
+  m_Center: {x: -5.96046448e-08, y: 0, z: 0}
 --- !u!114 &11447676
 MonoBehaviour:
   m_ObjectHideFlags: 1

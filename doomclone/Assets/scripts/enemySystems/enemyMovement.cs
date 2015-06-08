@@ -3,7 +3,7 @@ using System.Collections;
 
 public class enemyMovement : MonoBehaviour {
 
-	public float speed = 1;
+	public float speed = 2;
 	public int howLongStrafe=2000;
 	public int moveOffset = 100; //delay between switching FB and RL movements
 	public float gravityAmount = 5;

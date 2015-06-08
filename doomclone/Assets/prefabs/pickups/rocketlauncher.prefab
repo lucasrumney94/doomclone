@@ -9,9 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 487272}
   - 33: {fileID: 3355256}
-  - 64: {fileID: 6485508}
   - 23: {fileID: 2317114}
   - 114: {fileID: 11405826}
+  - 114: {fileID: 11472532}
+  - 65: {fileID: 6502552}
   m_Layer: 0
   m_Name: rocketlauncher
   m_TagString: Untagged
@@ -62,8 +63,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138172}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6485508
-MeshCollider:
+--- !u!65 &6502552
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -72,8 +73,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: .999999821, y: 1, z: .5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11405826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,6 +86,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72dc5a753df3c314f89ec3071acbb161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11472532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5a5478a8779e44e89cafd567dbc316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: rocketlauncher
+  amount: 3
+  isGun: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

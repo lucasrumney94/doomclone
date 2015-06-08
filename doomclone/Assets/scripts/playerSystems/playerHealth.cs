@@ -32,8 +32,8 @@ public class playerHealth : MonoBehaviour {
 		}
 
 
-		Debug.Log (health);
-		Debug.Log (armor);
+		//Debug.Log (health);
+		//Debug.Log (armor);
 
 
 			//Debug.Log (health);

@@ -15,7 +15,7 @@ public class elevator : MonoBehaviour {
 	public float elevatorHeight;
 	//public bool activated;
 	public bool up = false;
-	public Transform player;
+	private GameObject player;
  
 
 	private RaycastHit onHit;
@@ -26,6 +26,7 @@ public class elevator : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		player = GameObject.FindGameObjectWithTag("Player");
 		if (up) 
 		{
 			upPosition = transform.position;
@@ -39,6 +40,7 @@ public class elevator : MonoBehaviour {
 
 		StartCoroutine("playerDetect");
 		changeState = false;
+
 	}
 	
 	// Update is called once per frame
@@ -70,15 +72,14 @@ public class elevator : MonoBehaviour {
 				up = true;
 			}
 
-
-
-
 			//else 
 			//{
 				//up = true;
 				//changeState = false;
 			//}
 		}
+		Debug.DrawRay(player.transform.position+player.transform.TransformVector(Vector3.forward*1.1f),player.transform.forward, Color.cyan);
+		//+player.transform.TransformVector(Vector3.forward*1.5f)+player.transform.TransformVector(Vector3.down*.2f)
 	}
 
 	void changeMyState()
@@ -91,14 +92,15 @@ public class elevator : MonoBehaviour {
 	{
 		for (;;) //always
 		{ 
-		if (Physics.Raycast(player.position,transform.TransformDirection(Vector3.down),out onHit,activate_distance))
+		
+		if (Physics.Raycast(player.transform.position+player.transform.TransformVector(Vector3.forward*1.5f), transform.TransformDirection(Vector3.down),out onHit,activate_distance))
 			{
 				//Debug.Log("down hit");
 				//changeState = true;
 				onHit.collider.SendMessageUpwards("changeMyState",SendMessageOptions.DontRequireReceiver);
 				//Debug.DrawLine(transform.position,onHit.point, Color.red);
 			}
-			if (Physics.Raycast(player.position,transform.TransformDirection(player.forward),out onHit,activate_distance))
+			if (Physics.Raycast(player.transform.position,player.transform.forward,out onHit,activate_distance))
 			{
 				//Debug.Log("front hit");
 				//changeState = true;

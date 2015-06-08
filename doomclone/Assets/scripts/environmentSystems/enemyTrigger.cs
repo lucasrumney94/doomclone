@@ -13,7 +13,7 @@ public class enemyTrigger : MonoBehaviour {
 	{
 		if (c.tag == "Player")
 		{
-			Debug.Log ("in collider!");
+//			Debug.Log ("in collider!");
 			//Physics.IgnoreCollision(c.collider, GetComponent<Collider>());
 			foreach (Transform child in transform)
 			{

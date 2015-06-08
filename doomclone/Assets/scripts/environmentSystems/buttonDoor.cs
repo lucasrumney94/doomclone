@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class secretDoor : MonoBehaviour {
+public class buttonDoor : MonoBehaviour {
 	
 	public float doorHeight; //How far the door will move
 	public float doorSpeed;
@@ -13,12 +13,13 @@ public class secretDoor : MonoBehaviour {
 	
 	void Start()
 	{
-		originalPosition = GetComponentInParent<Transform>().position;
+		originalPosition = transform.position;
 	}
 	
 	void Update()
 	{
 		if (openMe && transform.position.y - originalPosition.y < doorHeight) {
+			//Debug.Log ("buttonDoor was activated!!");
 			transform.position += new Vector3 (0, doorSpeed, 0);
 		} 
 		else 
@@ -27,8 +28,6 @@ public class secretDoor : MonoBehaviour {
 		}
 
 	}
-	void interact()
-	{
-		openMe = true;
-	}
+
+	
 }
