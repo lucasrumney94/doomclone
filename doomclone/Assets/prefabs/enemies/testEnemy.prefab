@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11498700}
   - 114: {fileID: 11435552}
   - 114: {fileID: 11411432}
+  - 114: {fileID: 11444760}
   m_Layer: 8
   m_Name: testEnemy
   m_TagString: Untagged
@@ -101,6 +102,17 @@ MonoBehaviour:
   shotgunSpread: .600000024
   rocketPrefab: {fileID: 0}
   launcher3Offset: 1
+--- !u!114 &11444760
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd02e1781604e04081b2e39dcda9ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11461326
 MonoBehaviour:
   m_ObjectHideFlags: 1
