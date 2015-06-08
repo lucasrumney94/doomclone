@@ -2056,7 +2056,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2362600, guid: 1ddfbb67bcbd04340a205d744b31d6a6, type: 2}
       propertyPath: m_ReflectionProbeUsage
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 144076, guid: 1ddfbb67bcbd04340a205d744b31d6a6, type: 2}
       propertyPath: m_Layer
@@ -2157,6 +2157,10 @@ Prefab:
     - target: {fileID: 166182, guid: 1ddfbb67bcbd04340a205d744b31d6a6, type: 2}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6572916, guid: 1ddfbb67bcbd04340a205d744b31d6a6, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ddfbb67bcbd04340a205d744b31d6a6, type: 2}
@@ -4882,19 +4886,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d421fc23b0a8fdc4da00768641cd9674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireHeight: 1.55200005
+  fireHeight: 1.60000002
   currentWeapon: 0
   numberOfWeapons: 4
   shotRange: 200
   scanSpread: 1
   scanAccuracy: 10
-  pistolDamage: 0
+  pistolDamage: 2
   pistolFireRate: 2
-  shotgunDamage: 0
+  shotgunDamage: 2
   shotgunFireRate: .5
   shotgunPellets: 8
   shotgunSpread: 3
-  machinegunDamage: 1
+  machinegunDamage: 2
   machinegunFireRate: 5
   rocketlauncherDamage: 4
   rocketlauncherFireRate: .200000003
@@ -6098,6 +6102,10 @@ Prefab:
     - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_ClearFlags
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}

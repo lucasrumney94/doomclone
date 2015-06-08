@@ -12,7 +12,7 @@ public class SkyboxCamera : MonoBehaviour {
 	
 	// the additional rotation to add to the skybox
 	// can be set during game play or in the inspector
-	public Vector3 SkyBoxRotation;
+	public Quaternion SkyBoxRotation;
 	
 	// Use this for initialization
 	void Start()
@@ -31,16 +31,17 @@ public class SkyboxCamera : MonoBehaviour {
 	
 	// if you need to rotate the skybox during gameplay
 	// rotate the skybox independently of the main camera
-	public void SetSkyBoxRotation(Vector3 rotation)
-	{
-		this.SkyBoxRotation = rotation;
-	}
+	//public void SetSkyBoxRotation(Vector3 rotation)
+//	{
+	//	this.SkyBoxRotation = rotation;
+	//}
 	
 	// Update is called once per frame
 	void Update()
 	{
 		SkyCamera.transform.position = MainCamera.transform.position;
 		//SkyCamera.transform.rotation = MainCamera.transform.rotation;
-		SkyCamera.transform.Rotate(SkyBoxRotation);
+		SkyCamera.transform.rotation *= SkyBoxRotation;//MainCamera.transform.rotation
+		//SkyCamera.transform.Rotate(SkyBoxRotation);
 	}
 }
