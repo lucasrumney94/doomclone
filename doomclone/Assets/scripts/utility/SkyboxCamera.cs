@@ -14,7 +14,7 @@ public class SkyboxCamera : MonoBehaviour
 	
 	// the additional rotation to add to the skybox
 	// can be set during game play or in the inspector
-	public Vector3 speed; 
+	public float speed = 0.05f; 
 	
 
 	private Vector3 SkyBoxRotation;
@@ -48,9 +48,10 @@ public class SkyboxCamera : MonoBehaviour
 	{
 		SkyCamera.transform.position = MainCamera.transform.position;
 		SkyCamera.transform.rotation = MainCamera.transform.rotation;
+
 		//SkyCamera.transform.rotation *= SkyBoxRotation;//MainCamera.transform.rotation
 		SkyCamera.transform.Rotate(SkyBoxRotation);
-		SkyBoxRotation += speed;
+		SkyBoxRotation.y += speed * Time.deltaTime;
 		if (SkyBoxRotation.x > 360.0f)
 			SkyBoxRotation.x = 0.0f;
 		if (SkyBoxRotation.y > 360.0f)
