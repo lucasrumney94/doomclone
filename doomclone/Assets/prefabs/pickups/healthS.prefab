@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2330566}
   - 114: {fileID: 11425346}
   - 65: {fileID: 6590184}
+  - 114: {fileID: 11438062}
   m_Layer: 0
   m_Name: healthS
   m_TagString: Untagged
@@ -85,6 +86,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72dc5a753df3c314f89ec3071acbb161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11438062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0d5714dd5d94dd4e9b401c04a4f0c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  armor: 0
+  amount: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -3,15 +3,17 @@ using System.Collections;
 
 public class enemyTrigger : MonoBehaviour {
 
+	private bool tripped = false;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 	
 	}
 	
 	// Update is called once per frame
 	void OnTriggerEnter(Collider c)
 	{
-		if (c.tag == "Player")
+		if (c.tag == "Player" && !tripped)
 		{
 //			Debug.Log ("in collider!");
 			//Physics.IgnoreCollision(c.collider, GetComponent<Collider>());
@@ -20,6 +22,7 @@ public class enemyTrigger : MonoBehaviour {
 				child.GetComponent<Collider>().SendMessageUpwards("setAwake",true,SendMessageOptions.DontRequireReceiver);
 			}
 			//this.gameObject.SetActive(false);
+			tripped = true;
 		}
 	}
 }

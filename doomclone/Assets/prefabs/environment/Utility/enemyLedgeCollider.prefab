@@ -11,9 +11,9 @@ GameObject:
   - 33: {fileID: 3332792}
   - 114: {fileID: 11403422}
   - 65: {fileID: 6564398}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: enemyLedgeCollider
-  m_TagString: Untagged
+  m_TagString: EnemyLedgeCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 438880}
   - 33: {fileID: 3335838}
-  - 64: {fileID: 6421500}
   - 23: {fileID: 2367964}
+  - 65: {fileID: 6508046}
   m_Layer: 8
   m_Name: 1_1_1floor
   m_TagString: Untagged
@@ -61,8 +61,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167754}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6421500
-MeshCollider:
+--- !u!65 &6508046
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -71,8 +71,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: 1, y: .999999821, z: .100000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

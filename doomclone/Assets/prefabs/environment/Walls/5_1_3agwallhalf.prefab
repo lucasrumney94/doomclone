@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 420078}
   - 33: {fileID: 3326890}
-  - 64: {fileID: 6408648}
   - 23: {fileID: 2351412}
+  - 65: {fileID: 6505584}
   m_Layer: 9
   m_Name: 5_1_3agwallhalf
   m_TagString: Untagged
@@ -61,8 +61,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190990}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6408648
-MeshCollider:
+--- !u!65 &6505584
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -71,8 +71,8 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: .999999821, y: 1, z: .100000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -21,15 +21,21 @@ public class billboard : MonoBehaviour
 	}
 	void Update()
 	{
-		targetPoint = target.transform.position;
-		targetPoint.y = this.gameObject.transform.position.y;
-		////transform.LookAt(transform.position + m_Camera.transform.rotation * Vector3.back, m_Camera.transform.rotation * Vector3.up); //This Rotates them with the camera
-		//transform.LookAt(targetPoint, Vector3.up);
+		if (this.gameObject != null)
+		{
+			targetPoint = target.transform.position;
+			targetPoint.y = this.gameObject.transform.position.y;
+			////transform.LookAt(transform.position + m_Camera.transform.rotation * Vector3.back, m_Camera.transform.rotation * Vector3.up); //This Rotates them with the camera
+			//transform.LookAt(targetPoint, Vector3.up);
 
 
 
 
-		transform.rotation = Quaternion.LookRotation(this.gameObject.transform.position-targetPoint);
-
+			transform.rotation = Quaternion.LookRotation(this.gameObject.transform.position-targetPoint);
+		}
+		else
+		{
+			Destroy(this);
+		}
 	}
 }

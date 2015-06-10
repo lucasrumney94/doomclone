@@ -78,7 +78,7 @@ public class elevator : MonoBehaviour {
 				//changeState = false;
 			//}
 		}
-		Debug.DrawRay(player.transform.position+player.transform.TransformVector(Vector3.forward*1.1f),player.transform.forward, Color.cyan);
+		//Debug.DrawRay(player.transform.position+player.transform.TransformVector(Vector3.forward*1.1f),player.transform.forward, Color.cyan);
 		//+player.transform.TransformVector(Vector3.forward*1.5f)+player.transform.TransformVector(Vector3.down*.2f)
 	}
 

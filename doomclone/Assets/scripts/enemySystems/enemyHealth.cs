@@ -21,7 +21,9 @@ public class enemyHealth : MonoBehaviour {
 		Destroy (GetComponent<enemyMovement>());
 		Destroy (GetComponent<BoxCollider> ());
 		Destroy (GetComponent<CharacterController> ());
+
 		//Destroy the Shooting Script
+		Destroy (GetComponent<enemyWeapon>());
 
 		//Destroy(gameObject);
 	}

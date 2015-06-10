@@ -27,12 +27,12 @@ public class playerWeapons : MonoBehaviour {
 	[Range(.5f,2f)]
 	public float fireHeight;
 
-
+	[Range(0,3)]
 	public int currentWeapon;
 	public int numberOfWeapons;
 	public float shotRange;
 	public float scanSpread = 1f;
-	public float scanAccuracy = 10; // keep low, its a for loop (this is the number of rays it will draw between -scanSpread and scanSpread)
+	public float scanAccuracy = 20; // keep low, its a for loop (this is the number of rays it will draw between -scanSpread and scanSpread)
 	//public float scanHeight = 1.2f; //lowerbound/scanHeight, upperBound*scanHeight (>1 is a high scan affinity, <1 scans lower)
 
 
@@ -138,7 +138,7 @@ public class playerWeapons : MonoBehaviour {
 		//Debug.Log (Ammo [Weapons[currentWeapon]]);
 		//Debug.Log (hasWeapon ["shotgun"]);
 		if (target != null)
-			Debug.Log (target.name);
+			//Debug.Log (target.name);
 
 
 		if (Input.GetButtonDown ("SwitchWeapon1")&& hasWeapon["pistol"]) 
@@ -197,7 +197,7 @@ public class playerWeapons : MonoBehaviour {
 
 			if (Physics.Raycast(fireHeight3,bullet3,out scanHit,shotRange))
 			{
-				if (scanHit.collider.gameObject.tag == "enemy")
+				if (scanHit.collider.gameObject.tag == "Enemy")
 				{
 					target = scanHit.collider.gameObject;
 					break;
@@ -227,6 +227,7 @@ public class playerWeapons : MonoBehaviour {
 			}
 			if (targetFound == true)
 			{
+				Debug.Log ("pistol target found");
 				if (Physics.Raycast(fireHeight3,target.transform.position-fireHeight3,out scanHit,shotRange))
 				{
 					scanHit.collider.SendMessageUpwards("applyDamage",weaponDamages[Weapons[currentWeapon]],SendMessageOptions.DontRequireReceiver);
@@ -270,7 +271,7 @@ public class playerWeapons : MonoBehaviour {
 					bullet3.x = Vector3.forward.x + 8*randomX;
 					bullet3 = transform.TransformDirection(bullet3);
 
-					Debug.DrawRay(fireHeight3,bullet3,Color.yellow);
+					Debug.DrawRay(fireHeight3,bullet3,Color.green);
 					if (Physics.Raycast(fireHeight3,bullet3,out scanHit,shotRange))
 					{
 						scanHit.collider.SendMessageUpwards("applyDamage",weaponDamages[Weapons[currentWeapon]],SendMessageOptions.DontRequireReceiver);

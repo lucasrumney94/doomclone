@@ -3,7 +3,7 @@ using System.Collections;
 
 public class rocket : MonoBehaviour {
 	// The fly speed (used by the weapon later)
-	public float speed = 2000.0f;
+	public float speed = 1000.0f;
 	
 	// explosion prefab (particles)
 	public GameObject explosionPrefab;

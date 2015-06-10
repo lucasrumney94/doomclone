@@ -17,8 +17,8 @@ GameObject:
   - 114: {fileID: 11411432}
   - 114: {fileID: 11444760}
   m_Layer: 8
-  m_Name: testEnemy
-  m_TagString: Untagged
+  m_Name: testEnemyHitscan
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,9 +89,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMelee: 0
-  isHitScan: 1
+  isHitScan: 0
   hasShotgun: 0
-  isProjectile: 0
+  isProjectile: 1
   lowDamage: 1
   highDamage: 5
   lowFireRate: 1
@@ -100,7 +100,7 @@ MonoBehaviour:
   meleeRange: 1
   shotgunPellets: 8
   shotgunSpread: .600000024
-  rocketPrefab: {fileID: 0}
+  rocketPrefab: {fileID: 198534, guid: b3d01d7b66fdcab45989305c3304dfc3, type: 2}
   launcher3Offset: 1
 --- !u!114 &11444760
 MonoBehaviour:
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f9fca6b9d3b804c9302f8f655e68d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 10
 --- !u!114 &11498700
 MonoBehaviour:
   m_ObjectHideFlags: 1
