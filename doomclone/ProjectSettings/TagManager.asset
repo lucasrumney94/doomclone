@@ -14,6 +14,11 @@ TagManager:
   - Ammo1Value
   - Ammo2Value
   - Ammo3Value
+  - New Tag
+  - New Tag
+  - New Tag
+  - New Tag
+  - MusicController
   layers:
   - Default
   - TransparentFX

@@ -30,8 +30,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187510}
   m_LocalRotation: {x: 0, y: .997384369, z: 0, w: .0722805858}
-  m_LocalPosition: {x: 20.9099998, y: .939999998, z: -15}
-  m_LocalScale: {x: 1.20000041, y: 1.84000003, z: 1}
+  m_LocalPosition: {x: 5.36200047, y: .0720000267, z: -.902999878}
+  m_LocalScale: {x: .240000099, y: .368000001, z: .200000003}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,14 +77,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80f9c3eaacbe804fa392f141186ac6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMelee: 0
-  isHitScan: 1
+  isMelee: 1
+  isHitScan: 0
   hasShotgun: 0
   isProjectile: 0
   lowDamage: 1
-  highDamage: 5
-  lowFireRate: 1
-  highFireRate: 3
+  highDamage: 3
+  lowFireRate: .100000001
+  highFireRate: 2
   shotRange: 200
   meleeRange: 1
   shotgunPellets: 8
