@@ -68,7 +68,7 @@ public class playerWeapons : MonoBehaviour {
 	public int rocketlauncherAmmo = 6;
 	
 	[Header("max Ammo")]
-	public int pistolMaxAmmo = 50;
+	public int pistolMaxAmmo = 500;
 	public int shotgunMaxAmmo = 50;
 	public int machinegunMaxAmmo = 500;
 	public int rocketlauncherMaxAmmo = 15;

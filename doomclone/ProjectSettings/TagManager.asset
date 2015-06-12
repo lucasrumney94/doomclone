@@ -7,6 +7,13 @@ TagManager:
   - Enemy
   - Projectile
   - EnemyLedgeCollider
+  - Projectiles
+  - HealthValue
+  - ArmorValue
+  - AmmoCurrentValue
+  - Ammo1Value
+  - Ammo2Value
+  - Ammo3Value
   layers:
   - Default
   - TransparentFX

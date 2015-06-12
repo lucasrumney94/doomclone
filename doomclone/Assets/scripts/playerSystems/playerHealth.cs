@@ -30,11 +30,12 @@ public class playerHealth : MonoBehaviour {
 		}
 		if (armor <= 0) 
 		{
+			armor = 0.0f;
 			health -= damage;
 		}
 
 
-
+		
 
 
 			//Debug.Log (health);
