@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11428836}
   - 114: {fileID: 11419884}
   - 114: {fileID: 11494884}
+  - 114: {fileID: 11475334}
   m_Layer: 8
   m_Name: testEnemyMelee
   m_TagString: Untagged
@@ -121,6 +122,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &11475334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd02e1781604e04081b2e39dcda9ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11494884
 MonoBehaviour:
   m_ObjectHideFlags: 1
