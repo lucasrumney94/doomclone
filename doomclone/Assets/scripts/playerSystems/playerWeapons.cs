@@ -90,6 +90,7 @@ public class playerWeapons : MonoBehaviour {
 	private bool canFire = true;
 	private bool fired = false;
 
+	private Animator pistolAnim;
 
 	//public Weapon pistol;
 
@@ -127,6 +128,9 @@ public class playerWeapons : MonoBehaviour {
 
 
 		checkMaxAmmo ();
+
+		pistolAnim = GameObject.FindGameObjectWithTag("pistol").GetComponent<Animator>();
+		pistolAnim.SetBool("Fire",false);
 	}
 	
 	// Update is called once per frame
@@ -182,6 +186,7 @@ public class playerWeapons : MonoBehaviour {
 	}
 	void fire(int currentWeapon)
 	{
+
 		target = null; //reset target every shot
 
 		fireHeight3 = transform.position;
@@ -217,6 +222,10 @@ public class playerWeapons : MonoBehaviour {
 
 		if (Weapons[currentWeapon]== "pistol" && canFire)
 		{
+			//play pistol animation
+			//Debug.Log ("pistol animation should be played");
+			pistolAnim.SetTrigger("Fire");
+
 			if (targetFound == false)
 			{
 				if (Physics.Raycast(fireHeight3,transform.TransformDirection(Vector3.forward),out scanHit,shotRange))

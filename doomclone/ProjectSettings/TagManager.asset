@@ -14,10 +14,10 @@ TagManager:
   - Ammo1Value
   - Ammo2Value
   - Ammo3Value
-  - a
-  - s
-  - d
-  - f
+  - pistol
+  - shotgun
+  - machinegun
+  - rocketlauncher
   - MusicController
   layers:
   - Default
